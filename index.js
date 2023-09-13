@@ -20,7 +20,7 @@ const path = require("path");
 const signature_pad = {
   isEdit: true,
   setsDataURL: {
-    get_filename: ({ id }) => (id ? `signature${id}.png` : "signature.png"),
+    get_filename: ({ id }) => (`signature${id}.png`),
     get_folder: ({ folder }) => folder,
   },
   configFields: async () => {
